@@ -1,0 +1,27 @@
+<%= form_with(model: proje, local: true) do |form| %>
+  <% if proje.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(proje.errors.count, "error") %> prohibited this proje from being saved:</h2>
+
+      <ul>
+      <% proje.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :marka %>
+    <%= form.text_field :marka %>
+  </div>
+
+  <div class="field">
+    <%= form.label :urun %>
+    <%= form.text_field :urun %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

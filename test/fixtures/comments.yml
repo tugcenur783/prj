@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  prj_id: 1
+  marka: MyString
+  urun: MyString
+
+two:
+  prj_id: 1
+  marka: MyString
+  urun: MyString

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Marka:</strong>
+  <%= @proje.marka %>
+</p>
+
+<p>
+  <strong>Urun:</strong>
+  <%= @proje.urun %>
+</p>
+
+<%= link_to 'Edit', edit_proje_path(@proje) %> |
+<%= link_to 'Back', projes_path %>
